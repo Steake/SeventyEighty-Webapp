@@ -1,7 +1,7 @@
 <script lang="ts">
+  import { enhance } from "$app/forms";
+  import { goto } from "$app/navigation";
   import { cart } from '$lib/stores/cart';
-  import { enhance } from '$app/forms';
-  import { goto } from '$app/navigation';
   import type { PageData, ActionData } from './$types';
 
   export let data: PageData;

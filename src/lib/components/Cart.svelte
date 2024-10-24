@@ -33,8 +33,6 @@
 {#if isOpen}
   <div 
     class="cart-overlay"
-    on:keydown={handleKeydown}
-    on:click={onClose}
     role="dialog"
     aria-label="Shopping Cart"
     tabindex="-1"
@@ -42,6 +40,7 @@
     <button 
       class="close-overlay"
       on:click={onClose}
+      on:keydown={handleKeydown}
       aria-label="Close cart overlay"
     >
       <span class="sr-only">Close cart overlay</span>
@@ -49,7 +48,6 @@
     
     <div 
       class="cart-container"
-      on:click|stopPropagation
       role="document"
     >
       <div class="cart-header">

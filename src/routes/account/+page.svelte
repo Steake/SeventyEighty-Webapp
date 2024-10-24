@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { PageData } from './$types';
-
   export let data: PageData;
 </script>
 
@@ -14,8 +13,8 @@
 
   <div class="profile-info">
     <div class="info-group">
-      <label>Email</label>
-      <p>{data.user.email || 'Guest Account'}</p>
+      <label for="email">Email</label>
+      <p id="email">{data.user.email || 'Guest Account'}</p>
     </div>
 
     {#if data.user.guest}
