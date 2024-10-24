@@ -1,0 +1,7 @@
+[build]
+command = "npm run build"
+publish = "build"
+
+[dev]
+framework = "sveltekit"
+targetPort = 5173
